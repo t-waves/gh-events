@@ -3,14 +3,14 @@ on:
   pull_request:
     types: opened
     branches:
-      - main # main
-      - "dev*" # dev-new dev-this-is-new
+      - master # master
+      - "dev*" # dev dev1 dev-new
       - "dev-*" # dev-new dev-this-is-new
       - "feat/**" # feat/new feat/new/button
   workflow_dispatch:
   push:
     branches:
-      - main # main
+      - master # master
       - "dev-*" # dev-new dev-this-is-new
       - "feat/**" # feat/new feat/new/button
     paths-ignore:
